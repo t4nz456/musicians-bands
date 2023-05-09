@@ -66,4 +66,10 @@ describe('Band, Musician, and Song Models', () => {
         const testSong3 = await testSong.destroy();
         expect(testSong3).toBe(null);
     });
+
+    expect(musiciansInBand).toContainEqual(musician1);
+    expect(musiciansInBand).toContainEqual(musician2);
+
 })
+
+
